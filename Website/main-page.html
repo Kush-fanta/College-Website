@@ -1,0 +1,1053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIITN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <style>
+      .l1g{
+        left: -265px;
+        position: relative;
+      }
+      #end-box{
+        background-color: rgb(0, 0, 0);
+        color: rgb(55, 255, 0);
+      }
+    </style>
+    <link rel="icon" href="Indian_Institute_of_Information_Technology,_Nagpur_Logo.svg.png">
+</head>
+<body style="overflow-x: hidden;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: fixed; width: 100%; z-index: 3;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="Indian_Institute_of_Information_Technology,_Nagpur_Logo.svg.png" alt="IIITN" width="45px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link " aria-current="page" href="#">HOME</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#aboutus" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ABOUT US
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#facilities">Facilities</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#department">DEPARTMENT</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#students" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            STUDENTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#activities">Activities</a></li>
+            <li><a class="dropdown-item" href="#achievements">Achievements</a></li>
+            <li><a class="dropdown-item" href="#clinical">Clinical Councelling</a></li>
+            <li><a class="dropdown-item" href="#scholarships">Scholarships</a></li>
+            <li><a class="dropdown-item" href="#hostel">Hostel</a></li>
+            <li><a class="dropdown-item" href="#mess">Student Mess</a></li>
+            <li><a class="dropdown-item" href="#forms">Form Section</a></li>
+            <li><a class="dropdown-item" href="#nirf">NIRF Ranking</a></li>
+            <li><a class="dropdown-item" href="#fees">Fees</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#placements" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            PLACEMENTS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#aboutp">About Us</a></li>
+            <li><a class="dropdown-item" href="#wrfiiitn">Why Recruit from IIITN?</a></li>
+            <li><a class="dropdown-item" href="#p-stats">Placements Statistics</a></li>
+            <li><a class="dropdown-item" href="#for_companies">For Companies</a></li>
+            <li><a class="dropdown-item" href="#for_students">For Students</a></li>
+            <li><a class="dropdown-item" href="#t&p">Contact T&P</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#admissions" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            ADMISSIONS
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#ug">Under Graduated B.Tech.</a></li>
+            <li><a class="dropdown-item" href="#pg">Postgraduate</a></li>
+            <li><a class="dropdown-item" href="#ug-rule">UG Acadamic Rule Book</a></li>
+            <li><a class="dropdown-item" href="#pg-rule">PG Acadamic Rule Book</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GOVERNANCE
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="director.html">DIRECTOR</a></li>
+            <li><a class="dropdown-item" href="dean.html">DEAN</a></li>
+            <li><a class="dropdown-item" href="registrar.html">REGISTRAR</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search" action="frontpage.html" method="get">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<br>
+<script>
+  function performSearch(query) {
+// Select the elements that contain the links in the navbar
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+// Filter the links based on the query
+const results = Array.from(navLinks).filter(function(link) {
+return link.textContent.toLowerCase().includes(query);
+});
+
+return results;
+}
+// Get the search input element and search results container
+const searchInput = document.getElementById('searchInput');
+const searchResults = document.getElementById('searchResults');
+
+// Add event listener for the input field
+searchInput.addEventListener('input', function() {
+// Clear the previous results
+searchResults.innerHTML = '';
+
+// Get the search query
+const query = this.value.toLowerCase();
+
+// Perform the search
+const results = performSearch(query);
+
+// Display the results
+results.forEach(function(result) {
+const li = document.createElement('li');
+const anchor = document.createElement('a');
+anchor.classList.add('dropdown-item');
+anchor.textContent = result.textContent;
+anchor.href = result.href;
+li.appendChild(anchor);
+searchResults.appendChild(li);
+});
+});
+
+</script>
+      <!-- Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide carousel_front">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active carousel_img">
+            <img src="admin refelction 1.jpg" class="d-block w-100 img-fluid" alt="IIITN Campus at Night">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Beauty in Rainy Season</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Ampi wide 1.jpg" class="d-block w-100 img-fluid" alt="" width="IIITN Image Pink Sky">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ampitheatre</h5>
+              <p></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Academic Block pic 1.png" class="d-block w-100 img-fluid" alt="IIITN tantra fest">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Acadamic Block</h5>
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- COntainer -->
+      <div class="conatiner-fluid" style="padding-left: 10px;">
+        <!-- About us -->
+        <div class="row" id="aboutus">
+          <div class="col-12">
+            <h3 class="display-6 text-center mt-4 mb-2">ABOUT US</h3>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h3>ACT (PPP)</h3>
+            <p>The Indian Institute of Information Technology (IIIT), Nagpur is one of the IIIT under the Indian Institute of Information Technology (Public-Private Partnership) Act, 2017.
+            </p>
+          </div>
+          <div class="col">
+            <h3>Statute</h3>
+            <p>The Indian Institute of Information Technology, Nagpur governs by the Statutes formulated by GoI.
+              These Statutes may be called the Statutes of the Indian Institute of Information Technology, Nagpur, 2017.
+            </p>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h3>Institute Profile</h3>
+              <p>Indian Institute of Information Technology, Nagpur (IIITN) is one of the 20 Indian Institutes of Information Technology established under the Public-Private Partnership Scheme by the Ministry of Education (erstwhile Ministry of Human Resource Development), Government of India. IIITN has been declared as an “Institution of National Importance” under the provisions of the Indian Institute of Information Technology (Public-Private Partnership) Act, 2017. The Institute started functioning during the year 2016-17 and Shifted to its Permanent Campus in Butibori Nagpur under the Department of Higher Education, Ministry of Education, and is supported by the Department of Higher Education, Government of Maharashtra, and Tata Consultancy Services, Mumbai as Industry Partner.</p>
+              <h4>Institute’s Mandate</h4>
+              <p>One of the main objectives of the Institute is to develop competent and capable youth imbued with the spirit of innovation and entrepreneurship with the social and environmental orientation to meet the knowledge needs of the country and provide Global Leadership in Information Technology & Allied Fields.</p>
+              <h4>Institute’s Vision</h4>
+              <p>The Institute aspires to attain the status of a top-notch Institution in Information Technology and Allied Fields and to emerge as an elite Research Institution by imparting futuristic quality education of Global Standards to corroborate the status of an “Institution of National Importance”.</p>
+              <h4>Institute’s Mission</h4>
+              <p>To undertake socially relevant, industry-oriented In-House Research & Development Programmes as well as to undertake cutting-edge research through Public-Private Participation in Information Technology & Allied Fields. The Institute shall endeavor to develop innovation and entrepreneurship with social and environmental orientation.</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row justify-content-evenly" style="text-align: center;">
+            <div class="col">
+              <img src="Shikshamantralay2.jpg" alt="GOVI" width="200" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col">
+              <img src="gom.png " alt="GOM" width="200" class="img-fluid img-thumbnail">
+            </div>
+            <div class="col">
+              <img src="TCS.jpg" alt="TCS" width="200" class="img-fluid img-thumbnail">
+            </div>
+            <!-- <div class="col">
+              <img src="Indian_Institute_of_Information_Technology,_Nagpur_Logo.svg.png" alt="IIITN" width="200" class="img-fluid img-thumbnail">
+            </div> -->
+          </div>
+          <br><br><br>
+          <hr>
+          <h3 class="display-6 text-center mt-4 mb-2" id="facilities">Facilities</h3>
+          <div class="row" style="text-align: center;">
+            <div class="col">
+              <img src="acadamic_block.jpg" alt="acadamic_block" class="img-fluid img-thumbnail" width="300"><p>Acadamic Block</p>
+            </div>
+            <div class="col">
+              <img src="lib_iiitn.jpg" alt="library" class="img-fluid img-thumbnail" width="300"><p>Library</p>
+            </div>
+            <div class="col">
+              <img src="nano_scitech_lab.jpg" alt="nano scitech lab" class="img-fluid img-thumbnail" style="height: 220px;"><p>Nano Sci-Tech Lab</p>
+            </div>
+            <div class="col">
+              <img src="control_syystem_lab.jpg" alt="Control system lab" class="img-fluid img-thumbnail" width="300"><p>Control System Lab</p>
+            </div>
+          </div>
+          <div class="row" style="text-align: center;">
+            <div class="col">
+              <img src="micr_lab_iiitn.jpg" alt="acadamic_block" class="img-fluid img-thumbnail" width="300"><p>Microprocessor</p>
+            </div>
+            <div class="col">
+              <img src="dsa_lab_iiitn.jpg" alt="library" class="img-fluid img-thumbnail" width="300"><p>Data Structure Lab</p>
+            </div>
+            <div class="col">
+              <img src="cp_lab_iiitn.jpg" alt="nano scitech lab" class="img-fluid img-thumbnail" style="height: 210px; width: 200px;"><p>Computer Programming Lab</p>
+            </div>
+            <div class="col">
+              <img src="iiitn_gym.jpeg" alt="Control system lab" class="img-fluid img-thumbnail" style="height: 220px;"><p>Hostel Gym</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row" id="department">
+            <div class="col">
+              <h3 class="display-6 text-center mt-4 mb-2" style="text-align: center;">DEPARTMENT</h3>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h4 class="display-6 text-center mt-4 mb-2">Basic Sciences</h4>
+              
+                <h5 class="border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="aboutdepartment_1.html">About Departement</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">BoS</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Achievements</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="researchbasicscience.html">Research</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Faculty</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Staff</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Project</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="laboratory_!.html">Laboratory</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Event</a></h5>
+              
+            </div>
+            <div class="col">
+              <h4 class="display-6 text-center mt-4 mb-2">Computer Science</h4>
+              <h5 class="border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="aboutdepartment2.html">About Departement</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">BoS</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Achievements</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="researchcse.html">Research</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Faculty</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Staff</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Project</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="laboratory_2.html">Laboratory</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Event</a></h5>
+            </div>
+            <div class="col">
+              <h4 class="display-6 text-center mt-4 mb-2">Electronics</h4>
+              <h5 class="border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="aboutdepartment_3.html">About Departement</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">BoS</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Achievements</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="researchece.html">Research</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Faculty</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Staff</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Project</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="laboratory_3.html">Laboratory</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Event</a></h5>
+            </div>
+            <div class="col">
+              <h4 class="display-6 text-center mt-4 mb-2">Doctoral Programme</h4>
+              <h5 class="border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Overview of PHD Program</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Doctoral Program Features</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Research Areas</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Operational Details</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Important Porforams</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Checklists</a></h5>
+                <h5 class="link-offset-2 link-underline link-underline-opacity-0 dept border border-success p-2 mb-2 border-opacity-50" href="#" style="text-align: center;"><a class="link-offset-2 link-underline link-underline-opacity-0" href="https://www.google.com/">Contact Us</a></h5>
+                
+            </div>
+          </div>
+          <hr>
+          <div class="row" id="students">
+            <div class="col">
+              <h3 class="display-6 text-center mt-4 mb-2" style="text-align: center;">STUDENTS</h3>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h4 class="display-6 text-center mt-4 mb-2" id="activities">Activities</h4>
+              <p>For the growth of students in all the areas of their interest the IIIT Nagpur envolve the students from CSE and ECE to participate in various activities such as Technical events, workshops, social out reach, sports, Swacha Bharat, entrepreneurship, intership, etc. <br><br>
+
+                The various activities at IIIT Nagpur are;<br><br>
+                
+                1) National Level Technical Event: <a class="link-offset-2 link-underline link-underline-opacity-0" href=""> TantraFiesta</a> <br>
+                
+                2) National Level Cultural Event:<a class="link-offset-2 link-underline link-underline-opacity-0" href=""> Abhivyakti</a> <br>
+                
+                3) Institute Annual Sports Gathering (IG) :<a class="link-offset-2 link-underline link-underline-opacity-0" href="">Institute Gathering</a></p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col">
+              <h4 class="display-6 text-center mt-4 mb-2" id="achievements">Achievements</h4><br>
+              <h5 class="h5">Computer Science Engineering</h5>
+              <h6 class="h6">In year 2020....</h6>
+              <p>Students from 2nd Year CSE S Arvind, Anshika Jain under the guidance of Dr. Nidhi Lal and Dr. Mayuri Digalwar, Assistant Professor in Dept. of CSE published paper titled "Insurance Claim Prediction Approach Using Machine Learning based Logistic Regression", IEEE International Conference on Measurement, Instrumentation, Control and Automation (#48462) (ICMICA 2020) April 2, 2020 to April 4,2020 , NIT Kurukshetra, Accepted. </p>
+              <p>Students from 2nd Year CSE Varun Shirbhayye, Deepesh Kurmi, Siddharth Dyavanapalli, A. Sai Hari Prasad under the guidance of Dr. Nidhi Lal, Assistant Professor in Dept. of CSE published paper titled "An Accurate Prediction of MPG (Miles Per Gallon) using Linear Regression Model of Machine Learning",  In 2020 International Conference on Computer Communication and Informatics (ICCCI), pp. 1-5. IEEE, 2020.  </p>
+              <p>Student from 2nd Year CSE Apurv Chandel and students from 4th Year ECE Aniruddha Gawate and Sahil Kesharwani published paper titled "Economic Ramification Due To COVID-19",  Available at SSRN 3598972 (2020). 
+              </p>
+              <p>Student from 2nd Year CSE Apurv Chandel published paper titled "An Accurate Estimation of Interstate Traffic of Metro City Using Linear Regression Model of Machine Learning" Available at SSRN 3598310 (2020). </p>
+              <p>Students from 2nd Year CSE Montu Saw, Tarun Saxena, Sanjana Kaithwas, Rahul Yadav under the guidance of Dr. Nidhi Lal, Assistant Professor in Dept. of CSE published paper titled "Estimation of Prediction for Getting Heart Disease Using Logistic Regression Model of Machine Learning", In 2020 International Conference on Computer Communication and Informatics (ICCCI), pp. 1-6. IEEE, 2020.  </p>
+              <p>Students from 2nd Year CSE Kumar Akash, Aniket Verma, Gandhali Shinde, Yash Sukhdeve under the guidance of Dr. Nidhi Lal, Assistant Professor in Dept. of CSE published paper titled "Crime Prediction Using K-Nearest Neighboring Algorithm", In 2020 International Conference on Emerging Trends in Information Technology and Engineering (ic-ETITE), pp. 1-4. IEEE, 2020. </p>
+              <p>Students from 2nd Year CSE P. S. M. Keerthana, Nimish Phalinkar, Riya Mehere, K. Bhanu Prakash Reddy under the guidance of Dr. Nidhi Lal, Assistant Professor in Dept. of CSE published paper titled "A Prediction Model of Detecting Liver Diseases in Patients using Logistic Regression of Machine Learning", Available at SSRN 3562951 (2020). </p>
+              <p>Mr. Ankit Barai third year student of CSE (team with Dr. Jitendra V. Tembhurne Assistant Professor, Department of CSE) selected for Stage- 2 of SAMHAR-COVID19 Hackathon 2020. </p>
+              <p>Mr. Sunny Dhoke, Final year student from CSE selected for Google Summer of Code – R Project for Statistical Computing – 2020</p>
+              <p>The mobile app "COWAR" on COVID 19 developed by Second Year CSE students Mr. Tarun Saxena, Ms. Gandhali Shinde, Mr. Nitesh Yadav and Mr. Prince Anuragi under the guidance of Dr. Mayuri A. Digalwar, Assistant Professor, Department of CSE - 2020</p>
+              <p>Students for 4th Year CSE Mayur Selukar, Kunal Yelne, Sanket Sinha, Vaibhav Agasti published paper titled "Application of Mathematical Models in Food Science and Biomass Production", in Mathematics and Its Connections to Real World, Kindle Direct Publishing (ISBN-13: 979-8605747451), pp. 198-205, 2020.</p>
+              <p>Students for 4th Year CSE Divyesh Saglani, Aman Kumar, Braj Kishor published paper titled "A Study on Relation of Mathematics and Music", in Mathematics and Its Connections to Real World, Kindle Direct Publishing (ISBN-13: 979-8605747451), pp. 190 -197, 2020.</p>
+              <p>Students for 4th Year CSE Aayesha Bassy, Rinisha Gedam, Prachita Kotangale, Vaidehi Ghime along with Dr. Kousik Das published paper titled "Golden Ratio: A Beauty of Mathematics", in Mathematics and Its Connections to Real World, Kindle Direct Publishing (ISBN-13: 979-8605747451), pp. 95-112, 2020.</p>
+              <p>Students for 4th Year CSE Avishkar Zade, Atharv Daflapurkar, Sanket Kale, Tejas Tidke along with Dr. Rupkumar Mahapatra published paper titled "Mathematics in Nature", in Mathematics and Its Connections to Real World, Kindle Direct Publishing (ISBN-13: 979-8605747451), pp. 80-94, 2020.</p>
+              <p>Mr. Aditya Sher and Mr. Sourav Singh from 3rd Year IIIT, Nagpur with Team name “X-LABS” owns the First Price at Hackathon - 2020, Hyderabad</p>
+              <h6 class="h6">In year 2019....</h6>
+              <p>Congratulations for Team " THE TERRIFYING NIGHTMARES" for Winning 1st Prize @ Smart India Hackathon – 2019</p>
+              <p>Vaibhav H. Agasti (Final Year CSE) pursuing an internship at Muma College of Business, University of South Florida – 2019</p>
+              <p>Students for 3rd Year CSE Ankit Khushal Barai published the paper titled "NSE Stock prediction-Deep learning way", SoCTA 2019.</p>
+              <p>Students for 3rd Year CSE Ankit Khushal Barai published the paper titled "Drone video management systems", HiPC 2019.</p>
+              <p>Student from 2nd Year CSE Apurv Chandel under the guidance of Dr. Kirti Dorshetwar, Assistant Professor in Dept. of BS published paper titled "Media as a Social Need" in International Journal of Innovative Technology and Exploring Engineering (IJITEE)ISSN: 2278-3075, Volume-8, Issue-11S, September 2019
+              </p>
+              <p>Students for 4th Year CSE Vaibhav Agasti under the guidance of Dr. Robin Singh Bhadoria published the paper titled "The Paradigms of Blockchain Technology: Myths, Facts & Future," International Journal of Information Systems and Social Change (IJISSC), IGI Global, vol. 10(2), pages 1-14, April. 2019.</p>
+              <p>Atharva Nimbalkar published a chapter on Application of Blockchain into IoT networks for Security in the reference book by Springer Publications – 2019</p>
+              <h6 class="h6">In year 2018...</h6>
+              <p>Mr. Vaibhav Agasthi from CSE for getting selected in Under 19 Vidarbha Chess Team, 2018.
+                Parth Wazurkar from CSE has been selected as a developer intern in Google Summer of Code 2018.</p>
+              <p>Anushri Laddha from CSE was the finalist at Master Orator Championship organized by International Toast Masters Organization, 2018. </p>
+              <h6 class="h6">In year 2017...</h6>
+              <p>Parth Wazurkar co-authored a research paper on “Predictive Analytics in Data Science for Business Intelligence Solutions” in IEEE conference CSNT 2017.</p>
+              <h5 class="h5">Electronics and Communication</h5>
+              <h6 class="h6">In year 2020...</h6>
+              <p>Students for 3rd Year ECE Shivani Dhok, Varad Pimpalkhute, Ambarish Chandurkar under the guidance of Dr. Ankit Bhurane, Dr. Manish Sharma and Dr. U Rajendra Acharcya published the paper titled "Automated phase classification in cyclic alternating patterns in sleep stages using Wigner–Ville Distribution based features", Computers in Biology and Medicine, 2020.
+              </p>
+              <p>Student from 2nd Year CSE Apurv Chandel and students from 4th Year ECE Aniruddha Gawate and Sahil Kesharwani published paper titled "Economic Ramification Due To COVID-19",  Available at SSRN 3598972 (2020). 
+              </p>
+              <p>Mr. Sahil Kesharwani (BT18ECE032) a Second Year ECE student has developed an android app "COVID CARE" under the mentorship of Dr. Anuradha Singh and Dr. Kirti Dorshetwar - 2020 
+              </p>
+              <p>SoDi App is developed by Mr. Kartik Kinge (BT16ECE003), final year student of IIIT Nagpur. SoDi is an Augmented Reality application to help people visualize proper social distancing. It is advised to keep a distance of 6 feet with each other when you are in public places during coronavirus pandemic.</p>
+              <p>Kartik W. Kinge (Final Year ECE) participated in MIT Reality Hack 2020 held at Massachusetts Institute of Technology, Cambridge, USA – 2020.
+              </p>
+              <p>Mr. Aditya Sher and Mr. Sourav Singh from 3rd Year IIIT, Nagpur with Team name “X-LABS” owns the First Price at Hackathon - 2020, Hyderabad</p>
+              <p>Students for 4th Year ECE Kritika Dhawale under the guidance of Chitra Dhawale published the paper titled "Current Trends in Deep Learning Frameworks With Opportunities and Future Prospectus", Neural Networks for Natural Language Processing, IGI Global, pp. 63-77, 2020.</p>
+              <h6 class="h6">In year 2019...</h6>
+              <p>Students for 3rd Year ECE Shivani Dhok under the guidance of Dr. Ankit Bhurane, Head and Assistant Professor, Dept. of ECE published the paper titled "Diagnosis of Parkinson's Disease from EEG signals using Linear and Self-Similarity features", Experts System (Special Issue paper), November 2019.</p>
+              <p>Authors: Ankit Bhurane, Shivani Dhok, Manish Sharma, Rajamanickam Yuvaraj,  Murugappan Murugappan,  U. Rajendra Acharya.</p>
+              <p>Students for 4th Year ECE Kritika Dhawale under the guidance of Rakesh Kumar, Manish Sharma and Gaurav Singal from Bennett University, Greater Noida, India published the paper titled "Deep Learning Frameworks: Current Trends, Opportunities and Future Prospectus", in I2CN-2019, 2019 IEEE 9th  International Conference on Advanced Computing (IACC) – 2019</p>
+              <p>Kartik W. Kinge (Final Year ECE) pursuing internship at Fujitsu Ltd, Japan – 2019
+                Sahil S. Deshmukh (Final Year ECE) pursuing an internship at Ecole Centrale Supelec, Paris - 2019 -- 100% Internship Offers for the first batch of B. Tech. CSE - 2019 </p>
+              <p>100% Internship Offers for the first batch of B. Tech. ECE - 2019.</p>
+              <p>Shivani Dhok, A. G. Kothari and Ankit Bhurane published a research paper on “Automated Hyperspectral Image Classification using Spatial-Spectral features” at the 6th Intl Conference on Signal Processing and Integrated Networks - 2019
+              </p>
+              <h6 class="h6">In year 2018...</h6>
+              <p>AR Vidhya – A start up founded by ECE student Mr. Kartik Kinge is based on Augmented Reality and E-Learning - 2018AR Vidhya – A start up founded by ECE student Mr. Kartik Kinge is based on Augmented Reality and E-Learning - 2018</p>
+              <p>Team ARVidhya: Mr. Kartik Kinge (ECE) and  Mr. AdityaSher(CSE) bagged 1st Prize in International IEEE SS12 Maker Fair 2018.</p>
+              <p>Team ARVidhya: Mr. Kartik Kinge (ECE) and  Mr. AdityaSher(CSE) won the Techstars Start-up weekend Hackathon held at Microsoft  Hyderabad campus powered by Google for Entrepreneurs - 2018</p>
+              <p>Aman Soni, Sahil Deshmukh, and Somesh Kumar, “A Shortest Path Algorithm for 3D Integrated Circuit TSV Assignment”, IEEE international conference EDAPS 2018</p>
+            </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col"></div>
+            <h4 class="display-6 text-center mt-4 mb-2" id="clinical">Clinical Councelling</h4><br>
+            <p>All the students are hereby informed that the institute clinical counselor will be available as follows: <br><br>
+              1. In Person (with prior appointment):  Evening 4:30 to 6:30 PM at the institute.(Tuesday, Wednesday & Thursday) <br>
+            2. Student are hereby advised to use this facility fully in case of any mental health related issues because of any reason irrespective of their location. <br>
+          3. For all other time the counselor can be reached at counselor@iiitn.ac.in or +91 9970303386. (Only for clinical counselling) <br>
+          NOTE: The above Contact No. is not for Admission Related Enquiries. For Admission Enquiry, please visit Admission Tab on Home page. </p>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h4 class="display-6 text-center mt-4 mb-2" id="scholarships">Scholarships</h4><br>
+            <table class="table table-dark table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Student Domicile State</th>
+                  <th>Name of Scheme</th>
+                  <th>Scheme Governed by...</th>
+                  <th>Website Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>1</th>
+                  <th>Maharashtra</th>
+                  <th>Gov. India Post-Matric Scholarship</th>
+                  <th>Social justice and Special assistance</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>2</th>
+                  <th>Maharashtra</th>
+                  <th>Post-Matric Tuition Fee and Examination Fee (Freeship)</th>
+                  <th>Social justice and Special assistance</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>3</th>
+                  <th>Maharashtra</th>
+                  <th>Post Matric Scholarship Scheme (Government Of India )</th>
+                  <th>Tribal Development Department</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>4</th>
+                  <th>Maharashtra</th>
+                  <th>Tuition Fee &  Exam Fee for Tribal Students ( Freeship)</th>
+                  <th>Tribal Development Department</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>5</th>
+                  <th>Maharashtra</th>
+                  <th>Post Matric Scholarship to VJNT Students</th>
+                  <th>VJNT, OBC and SBC Welfare Department</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>6</th>
+                  <th>Maharashtra</th>
+                  <th>Tuition Fees and Examination Fees to VJNT Students</th>
+                  <th>VJNT, OBC and SBC Welfare Department</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>7</th>
+                  <th>Maharashtra</th>
+                  <th>Post Matric Scholarship to OBC Students</th>
+                  <th>VJNT, OBC and SBC Welfare Department</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>8</th>
+                  <th>Maharashtra</th>
+                  <th>Tuition Fees and Examination Fees to OBC Students</th>
+                  <th>VJNT, OBC and SBC Welfare Department</th>
+                  <th><a href="https://mahadbtmahait.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>9</th>
+                  <th>Madhya Pradesh</th>
+                  <th>Mukhya Mantri Medhavi Vidyarthi Yojana - MMVY</th>
+                  <th>Department of Technical Education & Skill Development, Government of Madhya Pradesh</th>
+                  <th><a href="http://scholarshipportal.mp.nic.in/Index.aspx" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>10</th>
+                  <th>Uttar Pradesh</th>
+                  <th>Post matric Other State Scholarship for  General Category </th>
+                  <th>Social Welfare Department, Government of Uttar Pradesh</th>
+                  <th><a href="http://scholarship.up.nic.in/index.aspx" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>11</th>
+                  <th>Rajasthan</th>
+                  <th>Dr. Ambedkar Post Matric Scholarship for EBC Students, Rajasthan</th>
+                  <th>Social Justice and Empowerment Department Government of Rajasthan</th>
+                  <th><a href="http://www.sje.rajasthan.gov.in/Default.aspx?PageID=346" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>12</th>
+                  <th>Telangana</th>
+                  <th>Post-Matric (Outside State) Scholarship for ST/ SC/ BC/EBC/Disabled Welfare Category students</th>
+                  <th>Government of Telangana	</th>
+                  <th><a href="https://telanganaepass.cgg.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>13</th>
+                  <th>Andhra Pradesh</th>
+                  <th>Post-Matric (Outside State) Scholarship for ST/ SC/ BC/EBC/Disabled Welfare Category students</th>
+                  <th>Government of Andhra Pradesh</th>
+                  <th><a href="https://jnanabhumi.ap.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>14</th>
+                  <th>National Scholarship Portal</th>
+                  <th>Post Matric Scholarships Scheme for Minorities</th>
+                  <th>Ministry of Minority Affairs	</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>15</th>
+                  <th>National Scholarship Portal</th>
+                  <th>Merit Cum Means Scholarship For Professional and Technical Courses CS</th>
+                  <th>N.A.</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>16</th>
+                  <th>National Scholarship Portal</th>
+                  <th>Post-matric Scholarship for Students with Disabilities</th>
+                  <th>Department of Empowerment of Person with Disabilities</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>17</th>
+                  <th>National Scholarship Portal</th>
+                  <th>Top Class Education Scheme for SC Students</th>
+                  <th>Ministry of Social justice and empowerment</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>18</th>
+                  <th>National Scholarship Portal</th>
+                  <th>Central Sector Scheme Of Scholarships for Colleges and  University Students</th>
+                  <th>Department of Higher Education</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>19</th>
+                  <th>National Scholarship Portal</th>
+                  <th>Prime Minister's Scholarship Scheme For Central Armed Police Forces And Assam Rifles</th>
+                  <th>Ministry of Tribal Affairs</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>20</th>
+                  <th>National Scholarship Portal</th>
+                  <th>National Fellowship and Scholarship for Higher Education of ST Students - Scholarship (Formally Top Class Education for Schedule Tribe Students) - only for scholarships</th>
+                  <th>N.A.</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+                <tr>
+                  <th>21</th>
+                  <th>National Scholarship Portal</th>
+                  <th>PM Scholarship Scheme For Wards of  States/UTs Police personnel Martyrad during Terror/NAXAL Attacks</th>
+                  <th>WARB Ministry of Home Affairs</th>
+                  <th><a href="https://scholarships.gov.in/" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h4 class="display-6 text-center mt-4 mb-2" id="hostel">Hostel</h4><br>
+            <h5 class="h5"><a href="Hostel Rules.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Hostel Rules for Boys</a></h5>
+            <h5 class="h5"><a href="Girs Hostel and General Rules.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Hostel Rules for Girls</a></h5>
+            <h5 class="h5"><a href="Mess Rules.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Mess Rules</a></h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="hostel_iiitn_night.jpeg" alt="" class="img-fluid img-thumbnail" width="250" height="250">
+          </div>
+          <div class="col">
+            <img src="iiitn_h1.jpeg" alt="" class="img-fluid img-thumbnail" width="250" height="250">
+          </div>
+          <div class="col">
+            <img src="iiitn_h2.jpeg" alt="" class="img-fluid img-thumbnail" width="250" height="250">
+          </div>
+          <div class="col">
+            <img src="iiitn_h3.jpeg" alt="" class="img-fluid img-thumbnail" width="250" height="250">
+          </div>
+          <div class="col">
+            <img src="iiitn_h4.jpeg" alt="" class="img-fluid img-thumbnail" width="250" height="250">
+          </div>
+          <div class="col">
+            <img src="iiitn_h5.jpeg" alt="" class="img-fluid img-thumbnail" width="250" height="250">
+          </div>
+          <div class="col">
+            <img src="iiitn_h6.jpeg" alt="" class="img-fluid img-thumbnail" width="250" height="350">
+          </div>
+          
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="mess">Student Mess</h4><br>
+            <p>IIIT Nagpur provides the good quality food at the mess. The foods are served in four time i.e. Breakfast, Lunch, Supper and Dinner.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="forms">Form Section</h4><br>
+            <h6 class="h6"><a href="" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Semester Registration Form</a></h6>
+            <h6 class="h6"><a href="" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Hostel Leaving Form</a></h6>
+            <h6 class="h6"><a href="" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Syllabus</a></h6>
+            <h6 class="h6"><a href="" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Other Administrative Form</a></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="nirf">NIRF Ranking</h4><br>
+            <h5 class="h5">All Report Ministry of Education (Shiksha Mantralaya):</h5><br>
+            <h6 class="h6"><a href="nirf_eng.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Engineering_IIITN</a></h6>
+            <h6 class="h6"><a href="nirf_overall.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Overall_IIITN</a></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="fees">Fees</h4><br>
+            <h6 class="h6">For Academic/Admission fees payment:<a href="https://www.onlinesbi.com/prelogin/icollecthome.htm?corpID=644817" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></h6>
+            <h6 class="h6">For Hostel fees payment:<a href="https://www.onlinesbi.com/prelogin/icollecthome.htm?corpID=649550" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Click Here</a></h6>
+          </div>
+        </div>
+        <hr>
+        <div class="row" id="placements">
+          <div class="col">
+            <h3 class="display-6 text-center mt-4 mb-2" style="text-align: center;">PLACEMENTS</h3>
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="aboutp">About us</h4><br>
+            <p>At IIITN, the Training & Placement Office is of strategic importance. It takes various initiatives to transform the students into smart workforce. The T&P Office believes in providing quality internships and placements to all its students.  <br>
+
+              Consistent efforts are made to collaborate with the leading organizations for joint technological development and research initiatives, internships and placements. It acts as a Resource Centre, where students get information about various training programmes, online courses, internships and projects at various Govt Organizations in India. <br>
+              
+              The T&P office is headed by the Sr. Office Associate T&P  Dr. Meera Jgadale, and supported by faculty In-charge Dr. Paritosh Peshwe and student representatives. <br>
+              
+              IIIT Nagpur Training & Placement Brochure <a href="IIITN PLACEMENT BROCHURE 2020-21.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Download</a></p>
+            <h4 class="h4">Campus Recruitment Training</h4>
+            <p>Campus Recruitment Training is a crucial aspect of the placement preparations. Students at IIITN are critically trained on aspects like Aptitude, Group Discussions, and Interview. Students are encouraged to take up entrepreneurship through interaction with founders of startups.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="row" id="wrfiiitn">
+          <div class="col">
+            <h4 class="display-6 text-center mt-4 mb-2" id="aboutp">Why Recruitmen from IIITN?</h4><br>
+            <h5 class="h5">Admission</h5>
+            <p>1. Established by MHRD, Govt of Maharashtra, and Industry partners. <br>
+              2. Declared as Institution of National Importance by Act of Parliament. <br>
+              3. Admissions happen through JoSAA. Only top 2% candidates taking JEE Mains Exam, make it to IIITN.</p>
+            <h5 class="h5">INDUSTRY ACADEMIA COLLABORATION</h5>
+            <p>1. Tie up with Tata Consultancy Services Ltd as Industry Partner. <br>
+                2. MoU with ESIEE (École Supérieure d'Ingénieurs en Électrotechnique et Électronique) Paris- Graduate School of Engineering, based in France for exchange programmes.</p>
+            <h5>Curriculum</h5>
+            <p>1. Industry relevant dynamic curriculum designed by Board of Studies which comprises of Tech experts from IT industry.
+              Core subjects are incorporated from the 1st semester. <br>
+              2. Choice Based Credit System gives an option to students to choose subjects of their choice. <br>
+              3. Option to pursue credit based Online Certification Courses from Coursera, Udacity, Google Certifications. <br>
+              4. Credit-based mandatory industry internship for full semester in final year B.Tech <br>
+              5. Lecture series delivered by Tech experts from IT & Electronics industry. <br>
+              6. IT Workshops on Data Structures, Python, HTML,Matlab, Robotics, Machine Learning etc.are conducted regularly by subject experts from IT industry.</p>
+              <h6 class="h6"><a href="https://iiitn.ac.in/Downloads/SCH3-FOR-CSE-2018.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Course Curriculum of CSE</a></h6>
+              <h6 class="h6"><a href="https://iiitn.ac.in/Downloads/ECE-scheme-2017-onwards.pdf" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">Course Curriculum of ESE</a></h6>
+            <h5 class="h5">RESEARCH ENVIRONMENT</h5>
+            <p>Research work is focussed on problems faced by IT Industry.Opportunity for people from Industry to pursue research interests under Industry-Academia Collaboration.Research Areas at IIIT Nagpur:</p>
+            <div class="row">
+              <div class="col">
+                <h4 class="h4">Computer Science and Engineering</h4>
+                <ol  >
+                  <li>Deep Learning</li>
+                  <li>Machine Learning</li>
+                  <li>parallel Computing</li>
+                  <li>High Performance Computing</li>
+                  <li>Data Mining</li>
+                  <li>IOT</li>
+                  <li>Pattern Recognition</li>
+                  <li>Bio Informatics</li>
+                </ol>
+              </div>
+              <div class="col">
+                <h4 class="h4">Electronics & Communication Engineering</h4>
+                <ol>
+                  <li>Signal, Image and Video Processing</li>
+                  <li>Biomedical Signal Processing</li>
+                  <li>Antennas Design</li>
+                  <li>Wireless Communication</li>
+                  <li>Wireless Sensor Network</li>
+                </ol>
+              </div>
+              <div class="col"><h4 class="h4">Basic Science & Engineering</h4>
+              <ol >
+                <li>Applied/Engineering Physics</li>
+                <li>Materials Science</li>
+                <li>Nanoscience and Nanotechnology</li>
+                <li>Applied/Engineering Mathematics</li>
+                <li>Real Algebraic Geometry</li>
+                <li>Quadratic forms</li>
+                <li>Algebra</li>
+                <li>Linear/nonlinear and optimal control optimization</li>
+                <li>Biomedical systems</li>
+                <li>Analytical Modelling</li>
+                <li>English Literature</li>
+
+              </ol>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h4 class="display-6 text-center mt-4 mb-2" id="p-stats">Placements Statistics</h4><br>
+          </div>
+        </div>  
+        <div class="row">
+          <div class="col" style="text-align: center;">
+            
+            <h5 class="h5">B.Tech. Batch 2019 - 2023</h5>
+            <h6>Maximum CTC: 86 LPA</h6>
+            <h6>MInimum CTC: 6 LPA</h6>
+            <h6>Average CTC: 13.56 LPA</h6>
+            <h6>Median CTC: 12 LPA</h6> <br>
+            <img src="https://iiitn.ac.in/Downloads/tnp/2023.png" alt="" class="img-fluid img-thumbnail">
+            <br><br>
+            <h4 class="h4">Placement Statistics of 2023 for CSE</h4><br>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 80%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 67.69%"></div>
+            </div><br>
+            <h4 class="h4">Placemnet Statistics of 2023 for ECE</h4>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 71.64%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 53.73%"></div>
+            </div><br>
+
+          </div>
+          <div class="col" style="text-align: center;">
+            
+            <h5 class="h5">B.Tech. Batch 2018 - 2022</h5>
+              <h6 class="h6">Maximum CTC: 40 LPA</h6>
+              <h6 class="h6">Minimum CTC: 3.5 LPA</h6>
+              <h6 class="h6">Average CTC: 12.04 LPA</h6>
+              <h6 class="h6">Median CTC: 12 LPA</h6>
+              <img src="https://iiitn.ac.in/Downloads/tnp/2022/updated-22.PNG" alt="" class="img-fluid img-thumbnail">
+              <br><br>
+            <h4 class="h4">Placement Statistics of 2022 for CSE</h4><br>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 80.6%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 77.41%"></div>
+            </div><br>
+            <h4 class="h4">Placement Statistics of 2022 for ECE</h4><br>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 76.92%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 65.38%"></div>
+            </div><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" style="text-align: center;">
+            
+            <h5 class="h5">B.Tech. batch 2017 - 2021</h5>
+            <h6 class="h6">Maximum CTC: 46.75 LPA</h6>
+            <h6 class="h6">Minimum CTC: 6 LPA</h6>
+            <h6 class="h6">Average CTC: 8.44 LPA</h6>
+            <h6 class="h6">Median CTC: 8 LPA</h6>
+            <img src="https://iiitn.ac.in/images/tnp/2021/2021-2.JPG" alt="" class="img-fluid img-thumbnail">
+            <br><br>
+            <h4 class="h4">Placement Statistics of 2021 for CSE</h4><br>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 63.461%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 57.69%"></div>
+            </div><br>
+            <h4 class="h4">Placement Statistics of 2021 for CSE</h4><br>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 85.39%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 70.78%"></div>
+            </div><br>
+          </div>
+          <div class="col" style="text-align: center;">
+            
+            <br><br>
+            <h5 class="h5">B.Tech. Batch 2018 - 2022</h5>
+            <h6 class="h6">Maximum CTC: 40 LPA</h6>
+            <h6 class="h6">Minimum CTC: 3.5 LPA</h6>
+            <h6 class="h6">Average CTC: 12.04 LPA</h6>
+            <h6 class="h6">Median CTC: 12 LPA</h6>
+            <img src="https://iiitn.ac.in/images/tnp/prec2020.jpg" alt="" class="img-fluid img-thumbnail" width="600">
+            <br><br>
+            <h4 class="h4">Placement Statistics of 2020 for CSE</h4><br>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 83.33%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 83.33%"></div>
+            </div><br>
+            <h4 class="h4">Placement Statistics of 2020 for CSE</h4><br>
+            <div class="progress" role="progressbar" aria-label="Success striped example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-success" style="width: 100%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Info striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-info" style="width: 58.82%"></div>
+            </div><br>
+            <div class="progress" role="progressbar" aria-label="Warning striped example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bar progress-bar-striped bg-warning" style="width: 58.82%"></div>
+            </div><br>
+          </div>
+        </div>
+        <div class="row" style="text-align: center;">
+          <div class="col">
+            <button type="button" class="btn btn-success">Total Studennts</button>
+          </div>
+          <div class="col"><button type="button" class="btn btn-info">Students applied for Placemnts</button></div>
+          <div class="col"><button type="button" class="btn btn-warning">Students Placed</button></div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h4 class="display-6 text-center mt-4 mb-2" id="for_companies">For Companies</h4><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h6 class="h6"><a href="https://forms.gle/umKiKEfGF8y1y1YF8" class="link-offset-2 link-underline link-underline-opacity-0" target="_blank">--> Job Announcement Form</a></h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="for_students">For Students</h4><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="h5" style="text-align: center;">Guidelines for Students </h5>
+            <p>Students are informed to keep below documents ready for all the internship & placement selection processes.</p>
+            <p>Documents checklist:</p>
+            <p>1) ID Proof <br></p>
+            <p> -- Aadhaar Card (mandatory) / PAN Card  / Driving License / Voter ID card</p>
+            <p>2) Address Proof (Any One) <br></p>
+            <p> -- Electricity bill / Bank Passbook / Aadhar card / Rent agreement</p>
+            <p>3) Self attested marksheets <br></p>
+            <p> -- 10th Std, 12th Std and all B.Tech Semesters and Transcript <br>
+
+              -- Course certificates / internship certificates, etc. <br>
+          
+              -- Recent Passport size Photographs in white background – 10 copies <br>
+          
+              -- Updated CV in prescribed format – 2 copies</p>
+            <p>4) CV Format <a href="https://iiitn.ac.in/page/for-students/46/images/tnp/CV-format.docx" class="link-offset-2 link-underline link-underline-opacity-0">Click Here...</a></p>
+            <p>5) Placement Policy <a href="https://iiitn.ac.in/Downloads/tnp/Placement%20Policy-2021-22.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here...</a></p>
+            <p>6) Internship Instructions and Evaluation Guidelines <a href="https://iiitn.ac.in/Downloads/tnp/SEMESTER%20INTERNSHIP%20GUIDELINES%20-%20BATCH%202021_2.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here...</a></p>
+            <p>7) Semester Internship Evaluation Guidelines <a href="https://iiitn.ac.in/Downloads/tnp/SEMESTER%20INTERNSHIP%20EVALUATION%20-%20BATCH%202021.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here...</a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="t&p">Contact T&P</h4><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col" style="text-align: center;">
+             <img src="https://iiitn.ac.in/images/Faculty/ps1.jpg" alt="" class="img-fluid img-thumbnail"> <br>
+            <p style="text-align: center;">Dr. Paritosh Peshwe</p>
+            <strong style="text-align: center;">Faculty- Co-ordinator Training & Placement</strong> <br><br>
+            <strong style="text-align: center;">Mobile No. 9975104323</strong> <br><br>
+            <strong style="text-align: center;">Email Id : <a href="mailto:paritoshpeshwe@iiitn.ac.in">paritoshpeshwe@iiitn.ac.in</a></strong>
+          </div>
+          <div class="col" style="text-align: center;">
+            <img src="https://iiitn.ac.in/images/Faculty/Dr.%20Meera%20Jagdale.jpg" alt="" class="img-fluid img-thumbnail" width="190"> <br>
+            <p style="text-align: center;">Dr. Meera Jagdale</p>
+            <strong style="text-align: center;">Training & Placement Officer</strong> <br><br>
+            <strong style="text-align: center;">Mobile No. +91 9764490050</strong> <br><br>
+            <strong style="text-align: center;">Email Id : <a href="mailto:tnp@iiitn.ac.in">tnp@iiitn.ac.in</a></strong>
+          </div>
+          <div class="col" style="text-align: center;">
+            <img src="https://iiitn.ac.in/images/faculty/PT.png" alt="" class="img-fluid img-thumbnail" width="180"> <br>
+            <p style="text-align: center;">Shri. Pritesh Tiwari</p>
+            <strong style="text-align: center;">Technical Officer</strong> <br><br>
+            <strong style="text-align: center;">Mobile No. +91 9425786655</strong> <br><br>
+            <strong style="text-align: center;">Email Id : <a href="mailto:placement@iiitn.ac.in">placement@iiitn.ac.in</a></strong>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col">
+            <h4 class="display-6 text-center mt-4 mb-2" id="admissions">ADMISSIONS</h4><hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h4 class="display-6 text-center mt-4 mb-2" id="ug">Undergraduate B.Tech.</h4><hr>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <h5 class="h5">B. Tech. Admission (CSE/ECE) 2023-24:</h5><br>
+            <h6 class="h6">Admission Brochure 2023-24 :<a href="https://iiitn.ac.in/Downloads/admission_document/Admission%20-%20LEAFLET-PDF-2023-24.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6>
+            <h6 class="h6"> Admission Cutoff of the year 2022-23 :<a href="https://iiitn.ac.in/images/admission2023/Cut%20offs.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6>
+            <h6 class="h6">Hostel Admission Form & Undertaking :<a href="https://iiitn.ac.in/Hostel%20Admission%20Form%20%26%20Undertaking%202021-22%20%281%29.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6><br><br>
+            <h5 class="h5">Fees :</h5><br>
+            <h6 class="h6">First Year Academic Fees Structure For 2023-2024 : <a href="https://iiitn.ac.in/images/admission2022/1st%20YearAcademic%20Fees%20Batch%202022-23-2.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6>
+            <h6 class="h6">1st Year Hostel Fees for the Year 2023-24 :<a href="https://iiitn.ac.in/images/admission2022/1st%20Year%20Hostel%20fee%20fr%202022-2023-2.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6>
+            <h6 class="h6">Fees Payment modes : <a href="https://iiitn.ac.in/page/fees/42/" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6>
+            <h6 class="h6">Payment details for guest house fees through SB collect :<a href="https://www.onlinesbi.sbi/sbicollect/icollecthome.htm?corpID=644817" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col">
+            <h4 class="h4">IIITN Offers following courses:</h4><br>
+            <h5 class="h5">Department of Computer Science & Engineering:</h5><br>
+            <p>1. B.Tech. Computer Science & Engineering (Intake - 223) <br>
+              2. B. Tech. CSE (Artificial Intelligence & Machine Learning) (Intake - 66) <br>
+              3. B. Tech. CSE (Data Science & Analytics) (Intake - 66) <br>
+              4. B. Tech. CSE (Human Computer Interaction & Gaming Technology) (Intake - 66)</p>
+            <br>
+            <h5 class="h5">Department of Electronics & Communication Engineering:</h5><br>
+            <p>1. B.Tech. Electronics & Communication Engineering (Intake - 150) <br>
+              2. B. Tech. ECE (Internet of Things) (Intake - 66)</p> <br>
+            <ul>
+              <li>More Details About Courses <a href="https://iiitn.ac.in/page/btech/34/" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></li>
+              <li>Campus Photo Gallary <a href="https://iiitn.ac.in/photo-gallery-album/upcoming-campus-photo/" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></li>
+              <li>Institute Placements Details <a href="#p-stats" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></li>
+              <li>Admission Cancellation & Fees Refund Policy <a href="https://iiitn.ac.in/images/admission2021/IIITN_Admission%20Cancellation%20%26%20Fees%20Refund%20Policy%20%281%29.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></li>
+              <li>JOSSA Website : <a href="https://josaa.nic.in/" class="link-offset-2 link-underline link-underline-opacity-0">Link</a></li>
+              <li>CSAB Website : <a href="https://csab.nic.in/" class="link-offset-2 link-underline link-underline-opacity-0">Link</a></li>
+              <li>SBI Education Loan: <a href="https://iiitn.ac.in/images/admission2021/Scholar_for_IIITN.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Link</a></li>
+              <li>CANARA BAnk Special Education Loan Scheme: <a href="https://iiitn.ac.in/images/admission2022/IIIT%20EDUCATION%20LOAN%20SCHEME-1-2.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Link</a></li>
+              <li>Guest House and Hotel near IIITN : <a href="https://iiitn.ac.in/images/admission2022/Guest%20and%20Hotels-1.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Link</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="display-6 text-center mt-4 mb-2" id="pg">Postgraduate B.Tech.</h4><hr>
+            <h5 class="h5">PhD. Admissions Notification 2023-24</h5><br>
+            <h6 class="h6">List of eligible candidates for the written test for PhD admission 2023-24 session: <a href="https://iiitn.ac.in/Downloads/phd/Admission2023/SHORTLIST%20OF%20PhD%202023-24%20WRITTEN%20TEST%20.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h6>
+          </div>
+        </div> <br>
+        <div class="row">
+          <div class="col">
+            <hr>
+            <h4 class="h4" style="text-align: center;" id="ug-rule">UG ACADEMIC RULE BOOK
+            </h4> <hr>
+            <h5 class="h5">The acdemic rule book for B. Tech CSE and ECE are as follows: <a href="https://iiitn.ac.in/Downloads/BTechRuleBook-V1.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h5> <hr>
+            <h4 class="h4" style="text-align: center;" id="pg-rule">PG ACADEMIC RULE BOOK
+            </h4> <hr>
+            <h5 class="h5">The acdemic rule book for PhD. programme in CSE and ECE are as follows: <a href="https://iiitn.ac.in/Downloads/PhDRuleBook-18-19-V1.pdf" class="link-offset-2 link-underline link-underline-opacity-0">Click Here</a></h5> <br>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="end-box">
+        <div class="col" style="text-align: center;">
+          <h5 class="h5">Important Links</h5><br>
+          <a href="grievnance.html" class="link-offset-2 link-underline link-underline-opacity-0">> Grienvance</a><br><hr>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSco29-RxP8WzKQkS_E5SkuHMZGaKnHxvvYj-HHWhscQ6t3G6Q/viewform" class="link-offset-2 link-underline link-underline-opacity-0">> Networking Complain</a><br><hr>
+          <a href="grievnance-comm.html" class="link-offset-2 link-underline link-underline-opacity-0">> Institute Grienvance Communittee</a><br><hr>
+          <a href="grievnance-scst.html" class="link-offset-2 link-underline link-underline-opacity-0">> Grienvance Communittee ST/SC cell</a><br><hr>
+          <a href="" class="link-offset-2 link-underline link-underline-opacity-0">> Anti-Ragging Communittee</a><br><hr>
+          <a href="" class="link-offset-2 link-underline link-underline-opacity-0">> Sexual Harassment Communittee</a><br><hr>
+          <a href="equal-opp.html" class="link-offset-2 link-underline link-underline-opacity-0">> Equal opportunitiy Cell</a><br><hr>
+        </div>
+        <div class="col" style="text-align: center;">
+          <h5 class="h5">Quick Links</h5><br>
+          <a href="https://accounts.google.com/signin/v2/identifier?service=mail&passive=true&rm=false&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1&osid=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="link-offset-2 link-underline link-underline-opacity-0">> Institute Webmail</a><br><hr>
+          <a href="https://iiitn.ac.in/page.php?id=42" class="link-offset-2 link-underline link-underline-opacity-0">> Online Fee Payment</a><br><hr>
+          <a href="" class="link-offset-2 link-underline link-underline-opacity-0">> Acadamic Calender</a><br><hr>
+          <a href="" class="link-offset-2 link-underline link-underline-opacity-0">> How to reach</a><br><hr>
+          <a href="" class="link-offset-2 link-underline link-underline-opacity-0">> Location</a><br><hr>
+          <a href="" class="link-offset-2 link-underline link-underline-opacity-0">> Tender</a><br><hr>
+          <a href="" class="link-offset-2 link-underline link-underline-opacity-0">> Recruitment</a><br><hr>
+        </div>
+        <div class="col" style="text-align: center;">
+          <h5 class="h5"> Contact Us</h5>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-up-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M0 8a8 8 0 1 0 16 0A8 8 0 0 0 0 8zm5.904 2.803a.5.5 0 1 1-.707-.707L9.293 6H6.525a.5.5 0 1 1 0-1H10.5a.5.5 0 0 1 .5.5v3.975a.5.5 0 0 1-1 0V6.707l-4.096 4.096z"/>
+          </svg>  Permanent Address: Survey No. 140,141/1 behind Br. Sheshrao Wankhade Shetkari Sahkari Soot Girni, Village - Waranga, PO - Dongargaon(Butibori), Tahsil- Nagpur (Rural), District Nagpur, Maharashtra- 441108</p><br><hr>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          </svg> 9405215010
+          <br><hr>
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+          </svg> <a href="mailto:registrar@iiitn.ac.in" class="link-offset-2 link-underline link-underline-opacity-0"> registrar@iiitn.ac.in</a><br><hr>
+        </div>
+      </div>
+    
+</body>
+</html>
